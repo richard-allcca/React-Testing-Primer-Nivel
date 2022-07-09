@@ -16,10 +16,13 @@ describe('Pruebas en <FirstApp/>', () => {
   })
 
 
-  test('should retornar el mensaje "Hola, Soy Goku', () => {
-    render(<FirstApp title={title} />);
-    // screen.debug(); //? muestra el contenido completo de body en el html 
+  test('Debe existir el mensaje "Hola, Soy Goku en el body ', () => {
 
+    render(<FirstApp title={title} />);
+
+    // screen.debug(); //? muestra el contenido completo de "body" en el html
+
+    // busca que exista el texto "Hola, Soy Goku" en el body
     expect(screen.getByText(title)).toBeTruthy();
     // expect(screen.getByText(title)).not.toBeTruthy();//? negacion de toBeTruthy
   })
@@ -28,6 +31,7 @@ describe('Pruebas en <FirstApp/>', () => {
   test('should mostrar el titulo en un h1', () => {
     render(<FirstApp title={title} />);
 
+    // busca por el texto por rol "elemento semantico html", heading son titulos h1 a h6
     expect(screen.getByRole('heading', { level: 1 }).innerHTML).toContain(title);
   })
 
