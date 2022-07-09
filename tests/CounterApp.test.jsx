@@ -1,6 +1,7 @@
 
 import { render, screen, fireEvent } from '@testing-library/react';
-import { CounterApp } from '../CounterApp';
+// import { CounterApp } from '../CounterApp';
+import { CounterApp } from './../src/CounterApp';
 
 describe('Pruebas en el <Counterapp/>', () => {
 

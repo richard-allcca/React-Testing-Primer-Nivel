@@ -1,9 +1,7 @@
 
 
-
-
 export const retornaArreglo = () => {
-  return ['ABC', 123];
+  return [ 'ABC', 123 ];
 }
 
 

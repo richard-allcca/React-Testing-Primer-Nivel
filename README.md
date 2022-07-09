@@ -11,9 +11,9 @@
 
     npm i jest --save-dev
     npm i @types/jest --save-dev
-    npm i --save-dev babel-jest @babel/core @babel/preset-env
-    npm i isomorphic-fetch -D (crea el jest.config y modifica el jest.setup)
-    npm i --save-dev @testing-library/react
+    npm i babel-jest @babel/core @babel/preset-env --save-dev 
+    npm i isomorphic-fetch -D (crea el jest.config y el jest.setup)(clase 59)
+    npm i @testing-library/react --save-dev 
     npm i @babel/preset-react
 
 ## Tests siempre escuchando cambios
