@@ -12,7 +12,7 @@
     npm i jest --save-dev
     npm i @types/jest --save-dev
     npm i babel-jest @babel/core @babel/preset-env --save-dev 
-    npm i isomorphic-fetch -D (crea el jest.config y el jest.setup)(clase 59)
+    npm i isomorphic-fetch -D 
     npm i @testing-library/react --save-dev 
     npm i @babel/preset-react
 
@@ -21,3 +21,7 @@
 - Modifica el script para Jest
 
     "test": "jest --watchAll"
+
+## Notas
+
+- Para test con `fetch` la libreria de `whatwg-fetch` tiene fallas por eso debemos usar `isomorphic-fetch`, ademas se debe crear y configurar los archivos `jest.config y el jest.setup` ejemplo en la clase 59
