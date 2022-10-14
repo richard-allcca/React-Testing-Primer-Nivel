@@ -4,38 +4,38 @@ import { getHeroeByIdAsync } from './../../src/base-pruebas/09-promesas';
 
 describe('Pruebas en 09 promesas', () => {
 
-  test(' getHeroeByIdAsync debe retornar un heroe', (done) => {
+   test(' getHeroeByIdAsync debe retornar un heroe', (done) => {
 
-    const id = 2;
-    getHeroeByIdAsync(id)
-      .then(data => {
+      const id = 2;
+      getHeroeByIdAsync(id)
+         .then(data => {
 
-        expect(data).toEqual({
-          id: 2,
-          name: "Spiderman",
-          owner: "Marvel"
-        });
+            expect(data).toEqual({
+               id: 2,
+               name: "Spiderman",
+               owner: "Marvel"
+            });
 
-        done();
-      })
-  })
+            done();
+         })
+   })
 
-  test('getHeroeByIdAsync debe retornar un error si heroe no existe', (done) => {
+   test('getHeroeByIdAsync debe retornar un error si heroe no existe', (done) => {
 
-    const id = 7;
-    getHeroeByIdAsync(id)
-      .then(data => {
+      const id = 7;
+      getHeroeByIdAsync(id)
+         .then(data => {
 
-        // ? se espera que la busqueda del heroe sea false
-        expect(data).toBeFalsy();
+            // ? se espera que la busqueda del heroe sea false
+            expect(data).toBeFalsy();
 
-        done();
-      }).catch(err => {
+            done();
+         }).catch(err => {
 
-        expect(err).toBe(`No se pudo encontrar el héroe con el id: ${id}`);
+            expect(err).toBe(`No se pudo encontrar el héroe con el id: ${id}`);
 
-        done();
-      })
-  })
+            done();
+         })
+   })
 
 })
