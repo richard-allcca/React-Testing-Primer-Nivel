@@ -1,4 +1,4 @@
-# Test en React
+# Pruebas unitarias y de integración - Probando secciones anteriores
 
 - Primer nivel de Testing en React
 
